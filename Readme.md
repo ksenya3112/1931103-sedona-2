@@ -1,8 +1,7 @@
 # Личный проект «Седона»
 
-* Студент: [Ксения Евтюхова](https://up.htmlacademy.ru/htmlcss-individual/2/user/1931103).
-* Наставник: `Неизвестно`.
-
+* Студент: [Ксения Евтюхова](https://up.htmlacademy.ru/htmlcss-individual/2/user/1931103)
+* Наставник: [Александр Козюков](https://htmlacademy.ru/profile/id1119885)
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
