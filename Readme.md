@@ -2,6 +2,7 @@
 
 * Студент: [Ксения Евтюхова](https://up.htmlacademy.ru/htmlcss-individual/2/user/1931103)
 * Наставник: [Александр Козюков](https://htmlacademy.ru/profile/id1119885)
+* Сайт: [Мой проект Седона](https://ksenya3112.github.io/1931103-sedona-2/)
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
