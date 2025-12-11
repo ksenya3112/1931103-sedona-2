@@ -162,8 +162,6 @@ body {
 .button-search {
   font-size: 20px;
   line-height: 36px;
-  width: 376px;
-  height: 52px;
 }
 
 .newsletter {
@@ -187,15 +185,13 @@ body {
   line-height: 26px;
 }
 
-input[type="email"] {
+.newsletter-field {
   border-radius: 4px 0 0 4px;
-  width: 452px;
-  height: 52px;
   border: none;
 }
 
-input[type="email"]::placeholder {
-  font-family: "PT Sans", sans-serif;
+.newsletter-field::placeholder {
+  font-family: inherit;
   font-size: 18px;
   line-height: 24px;
   color: rgba (0, 0, 0, 0.6);
@@ -206,8 +202,6 @@ input[type="email"]::placeholder {
   line-height: 36px;
   background: #82b3d3;
   border-radius: 0 4px 4px 0;
-  width: 232px;
-  height: 52px;
 }
 
 .page-footer {
@@ -268,7 +262,7 @@ input[type="email"]::placeholder {
   list-style: none;
 }
 
-input[type="number"] {
+.price {
   font-family: inherit;
   font-weight: 700;
   font-size: inherit;
@@ -292,9 +286,6 @@ input[type="number"] {
   text-align: center;
   color: #fff;
   border-radius: 4px;
-  width: 191px;
-  height: 36px;
-
 }
 
 .primary-button {
@@ -356,7 +347,6 @@ input[type="number"] {
 }
 
 .details,
-.add-to-favorites,
 .favorites {
   font-size: 16px;
   line-height: 20px;
@@ -366,6 +356,8 @@ input[type="number"] {
 
 .add-to-favorites {
   font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
   background-color: #82b3d3;
 }
 
