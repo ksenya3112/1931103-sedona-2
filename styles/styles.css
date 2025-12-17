@@ -15,13 +15,15 @@
 }
 
 html {
-  height: 100%;
+  min-height: 100%;
+  box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  display: flex;
-  flex-direction: column;
+  padding: 0 40px;
+  width: 100%;
+  max-width: 1200px;
   min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
@@ -32,31 +34,27 @@ body {
 
 .wrapper {
   margin: 0 auto;
-  width: 1200px;
-}
-
-.page-header {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
   background-color: #fff;
 }
 
-.navigation {
-  display: flex;
-  flex-wrap: wrap;
-  width: 1060px;
-  margin: 0 auto;
 
+.navigation {
+  padding: 0 70px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .navigation-list {
   list-style: none;
-  width: 775;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
-}
-
-.navigation-user {
-  max-width: 300px;
-  margin-left: auto;
 }
 
 .navigation-link {
@@ -70,6 +68,14 @@ body {
 
 .navigation-link-current {
   border-bottom: 2px solid #756257;
+}
+
+.navigation-list:first-of-type .navigation-link {
+  padding: 20px 16px;
+}
+
+.navigation-user .navigation-link {
+  padding: 22px 12px;
 }
 
 .button {
@@ -87,6 +93,7 @@ body {
 .navigation-item .button {
   font-size: 16px;
   line-height: 20px;
+  padding: 8px 50px;
 }
 
 .main-container {
@@ -94,12 +101,20 @@ body {
 }
 
 .preview {
+  text-align: center;
+}
+
+.preview-background {
   background-image: url("../images/preview-pattern.svg"), url("../images/background-preview.jpg");
   background-color: #c2d5e3;
   background-size: 100% auto, cover;
   background-position: left bottom, left top;
   background-repeat: no-repeat;
-  text-align: center;
+  max-height: 485px;
+}
+
+.preview-picture {
+  padding: 52px 38px 82px;
 }
 
 .preview-title {
@@ -108,16 +123,31 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   color: #000;
+  padding-top: 70px;
 }
 
 .preview-text {
   font-size: 22px;
   line-height: 26px;
+  padding-bottom: 70px;
+}
+
+.preview-title,
+.preview-text {
+  padding-left: 70px;
+  padding-right: 70px;
 }
 
 .advantages-list {
   list-style: none;
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.advantages-item {
+  flex-basis: 400px;
+  min-height: 385px;
 }
 
 .advantages-title {
@@ -126,6 +156,10 @@ body {
   line-height: 28px;
   text-transform: uppercase;
   color: #000;
+}
+
+.advantanges-picture {
+  flex-grow: 1;
 }
 
 .light {
@@ -143,7 +177,6 @@ body {
 }
 
 .services {
-  background-color: #fff;
   text-align: center;
 }
 
@@ -153,11 +186,13 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   color: #000;
+  padding-top: 64px;
 }
 
 .services-text {
   font-size: 22px;
   line-height: 26px;
+  padding-bottom: 64px;
 }
 
 .services-list {
@@ -168,8 +203,14 @@ body {
   flex-wrap: wrap;
 }
 
+.services-title,
+.services-text {
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
 .services-item {
-  max-width: 400px;
+  flex-basis: 400px;
   min-height: 385px;
 }
 
@@ -181,9 +222,14 @@ body {
   color: #000;
 }
 
+.services-name,
+.services-description {
+  padding: 85px;
+}
+
 .hotel-search {
   text-align: center;
-  background-color: #fff;
+  padding-bottom: 96px;
 }
 
 .hotel-search-title {
@@ -192,11 +238,14 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   color: #000;
+  padding-top: 96px;
+  margin-bottom: 20px;
 }
 
 .hotel-search-text {
   font-size: 22px;
   line-height: 26px;
+  margin-bottom: 54px;
 }
 
 .button-search {
@@ -211,6 +260,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
+  padding: 96px 70px 104px;
 }
 
 .newsletter-title {
@@ -244,14 +294,16 @@ body {
   border-radius: 0 4px 4px 0;
 }
 
-.page-footer {
-  background-color: #fff;
-  display: flex;
-}
-
 .footer-contacts {
   min-width: 142px;
-  margin-right: 41.5px;
+  margin-right: 42px;
+}
+
+.footer-contacts-adress {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
 }
 
 .footer-phone {
@@ -278,21 +330,26 @@ body {
   color: #fff;
   background-size: cover;
   background-repeat: no-repeat;
-
+  max-height: 412px;
 }
 
 .inner-header-title {
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
+  padding: 36px 566px 8px 70px;
+
 }
 
 .breadcrumbs {
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .breadcrumbs-item .current-page {
   font-size: 16px;
+  margin-left: 4px;
 }
 
 .catalog-filter {
@@ -304,15 +361,26 @@ body {
   border: none;
 }
 
+.catalog-filter-group,
+.flex-buttons {
+  min-height: 412px;
+  min-height: 160px;
+}
+
 .catalog-filter-title {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   text-transform: capitalize;
+  text-align: center;
 }
 
 .catalog-filter-list {
   list-style: none;
+}
+
+.catalog-filter-item {
+  margin-bottom: 16px;
 }
 
 .price {
@@ -358,7 +426,10 @@ body {
 }
 
 .catalog-hotels {
-  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 50px 70px 60px;
 }
 
 .hotel-quantity {
@@ -382,9 +453,42 @@ body {
   color: inherit;
 }
 
+.hotels-display {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+
+}
+
+.display-item {
+  margin-right: 8px;
+}
+
+.display-item:last-child {
+  margin-right: 0;
+}
+
 .hotels-list {
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
 }
+
+.hotels-card {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  margin-bottom: 20px;
+
+}
+
+.hotels-card:nth-child(3n) {
+  margin-right: 0;
+}
+
+
 
 .hotels-card-link {
   text-decoration: none;
@@ -430,12 +534,10 @@ body {
 .pagination {
   list-style: none;
   display: flex;
-  max-width: 400px;
+  padding: 0;
 }
 
 .pagination-item {
-  min-width: 60px;
-  min-height: 60px;
   margin-right: 8px;
 }
 
@@ -444,9 +546,13 @@ body {
 }
 
 .pagination-link {
+  display: block;
   font-size: 20px;
   line-height: 36px;
   background-color: #82b3d3;
+  min-width: 60px;
+  min-height: 60px;
+
 }
 
 .pagination-current {
@@ -455,11 +561,14 @@ body {
 }
 
 .forward {
+  display: block;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
   color: #000;
   border-radius: 4px;
+  min-width: 60px;
+  min-height: 60px;
 }
 
 .newsletter-no-background {
