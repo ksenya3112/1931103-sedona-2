@@ -55,8 +55,9 @@ body {
 /* Контейнер для выравнивания списков навигации в header*/
 .navigation-lists {
   display: flex;
-  justify-content: space-between;
 }
+
+.navigation-user {}
 
 .navigation-list {
   margin: 0;
@@ -84,10 +85,12 @@ body {
 
 .navigation-list:first-of-type .navigation-link {
   padding: 20px 16px;
+  gap: 20px;
 }
 
 .navigation-user .navigation-link {
   padding: 22px 12px;
+  gap: 22px;
   min-width: 20px;
   min-height: 20px;
 }
@@ -269,6 +272,7 @@ body {
 .button-search {
   font-size: 20px;
   line-height: 36px;
+  padding: 8px 50px;
 }
 
 .newsletter {
@@ -300,6 +304,7 @@ body {
 .newsletter-field {
   border-radius: 4px 0 0 4px;
   border: none;
+  padding: 14px 345px 14px 20px;
 }
 
 .newsletter-field::placeholder {
@@ -314,6 +319,7 @@ body {
   line-height: 36px;
   background: #82b3d3;
   border-radius: 0 4px 4px 0;
+  padding: 8px 50px;
 }
 
 .page-footer {
@@ -411,6 +417,9 @@ body {
   font-size: inherit;
   line-height: 24px;
   color: #000;
+  padding: 12px 82px 12px 20px;
+
+
 }
 
 .from,
@@ -440,11 +449,15 @@ body {
   background-color: #82b3d3;
   border: none;
   margin-bottom: 40px;
+  display: flex;
+  padding: 8px 50px;
 }
 
 .secondary-button {
   background-color: transparent;
   border: none;
+  display: flex;
+  padding: 8px 58px;
 }
 
 .catalog-hotels {
@@ -505,6 +518,7 @@ body {
 .hotels-list {
   margin: 0;
   margin-top: 40px;
+  padding: 0;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
