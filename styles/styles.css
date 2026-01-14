@@ -32,6 +32,18 @@ body {
   color: #333;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+
 .wrapper {
   margin: 0 auto;
   min-height: 100vh;
@@ -328,6 +340,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .footer-social-list {
@@ -364,6 +377,7 @@ body {
 
 .inner-header-title {
   margin: 0;
+  margin-bottom: 8px;
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
@@ -371,6 +385,7 @@ body {
 
 .breadcrumbs {
   margin: 0;
+  margin-bottom: 40px;
   padding: 0;
   list-style: none;
   display: flex;
@@ -388,24 +403,36 @@ body {
 .catalog-filter {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .catalog-filter-group {
   border: none;
 }
 
+
 .catalog-filter-title {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   text-transform: capitalize;
-  text-align: center;
+  margin-bottom: 32px;
 }
 
 .catalog-filter-list {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.catalog-filter-item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.control-checkbox,
+.control-radio {
+  margin-left: 2px;
 }
 
 .price {
@@ -415,8 +442,6 @@ body {
   line-height: 24px;
   color: #000;
   padding: 12px 82px 12px 20px;
-
-
 }
 
 .from,
@@ -464,9 +489,9 @@ body {
   align-items: center;
   padding: 50px 70px 60px;
 }
+
 .hotel-quantity {
   margin: 0;
-  margin-right: auto;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -478,6 +503,7 @@ body {
   background-color: transparent;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
+  margin-left: auto;
 }
 
 .select-control option {
@@ -504,6 +530,7 @@ body {
 .display-item:last-child {
   margin-right: 0;
 }
+
 .select-cards-view {
   display: flex;
   flex-grow: 1;
@@ -524,7 +551,6 @@ body {
   flex-direction: column;
   margin-right: 20px;
   margin-bottom: 20px;
-
 }
 
 .hotels-card:nth-child(3n) {
