@@ -57,6 +57,9 @@
                 </a>
               </li>
               <li class="breadcrumbs-item">
+                <span class="breadcrumbs-path"></span>
+              </li>
+              <li class="breadcrumbs-item">
                 <span class="current-page">Гостиницы</span>
               </li>
             </ul>
@@ -101,7 +104,7 @@
               </fieldset>
               <fieldset class="catalog-filter-group">
                 <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-                <input class="price" type="number" name="price" min="0" max="9000" value="0">
+                <input class="price price-from" type="number" name="price" min="0" max="9000" value="0">
                 <span class="from">от</span>
                 <input class="price" type="number" name="price" min="0" max="9000" value="9000">
                 <span class="to">до</span>
@@ -116,7 +119,6 @@
 
         <section class="catalog-hotels">
             <h2 class="hotel-quantity">Найдено гостиниц: <span class="found-hotels">38</span></h2>
-            <div class="select-cards-view">
             <select class="select-control" aria-label="Сортировка">
               <option value="popular">Сначала популярные</option>
               <option value="cheap" selected>Сначала дешевые</option>
@@ -139,7 +141,6 @@
                 </a>
               </li>
             </ul>
-          </div>
 
           <ul class="hotels-list">
             <li class="hotels-card">
@@ -241,7 +242,7 @@
       <footer class="page-footer">
         <section class="footer-contacts">
           <h2 class="visually-hidden">Контакты</h2>
-          <address class="footer-contacts-adress">
+          <address class="footer-contacts-address">
             <ul class="footer-social-list">
               <li class="footer-social-item">
                 <a class="social-link" href="https://vk.com/htmlacademy" target="_blank"></a>
