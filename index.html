@@ -120,19 +120,19 @@
               <img class="services-icon" src="images/housing.svg" alt="Иконка с домиком" width="75" height="72"
                 aria-hidden="true">
               <h3 class="services-name">Жильё</h3>
-              <p class="services-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+              <p class="services-description">Рекомендуем пожить<br> в настоящем мотеле,<br> всё как в кино!</p>
             </li>
             <li class="services-item">
               <img class="services-icon" src="images/food.svg" alt="Иконка с бургером" width="75" height="72"
                 aria-hidden="true">
               <h3 class="services-name">Еда</h3>
-              <p class="services-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+              <p class="services-description">Всегда заказывайте<br> топовый фирменный бургер, вы не разочаруетесь!</p>
             </li>
             <li class="services-item light">
               <img class="services-icon" src="images/present.svg" alt="Иконка с подарком" width="75" height="72"
                 aria-hidden="true">
               <h3 class="services-name">Сувениры</h3>
-              <p class="services-description">Не только китайского, но и настоящего местного производства!</p>
+              <p class="services-description">Не только китайского,<br> но и настоящего местного производства!</p>
             </li>
           </ul>
         </section>
@@ -192,7 +192,7 @@
                 <span class="visually-hidden">Ютуб</span>
               </li>
             </ul>
-            <a class="footer-phone" href="tel:+78128121212">+7(812)812-12-12</a>
+            <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
             <a class="htmlacademy-link" href="https://htmlacademy.ru/" target="_blank">
               <svg focusable="false" role="img" aria-label="Логотип HTML Академии" width="115" height="33" fill="#000"
                 viewBox="0 0 115 33" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -257,7 +257,7 @@
             <div class="form-group guest-group">
               <label class="modal-label" for="adults-number">Взрослые:</label>
               <div class="count-controls">
-                <button class="count-button button-minus" type="button">
+                <button class="count-button" type="button">
                   <span class="visually-hidden">Уменьшить количество взрослых</span>
                 </button>
                 <input class="count-input" type="number" name="adults-number" value="2" min="1" id="adults-number"
@@ -278,7 +278,7 @@
                 </div>
               </div>
               <div class="count-controls">
-                <button class="count-button button-minus" type="button">
+                <button class="count-button" type="button">
                   <span class="visually-hidden">Уменьшить количество детей</span>
                 </button>
                 <input class="count-input" type="number" name="children-number" value="2" min="0" id="children-number"
@@ -295,9 +295,9 @@
       <script>
         const modal = document.querySelector('.modal-overlay');
         const closeBtn = document.querySelector('.modal-button-close');
-        const openBtn = document.querySelector('.modal-search-button')
-        closeBtn.addEventListener('click', () => { modal.classList.add('.modal-close'); });
-        openBtn.addEventListener('click', () => { modal.classList.remove('.modal-close'); });
+        const openBtn = document.querySelector('.button-search');
+        closeBtn.addEventListener('click', () => { modal.classList.add('modal-close'); });
+        openBtn.addEventListener('click', () => { modal.classList.remove('modal-close'); });
       </script>
   </body>
 

@@ -39,7 +39,6 @@ svg {
   display: block;
 }
 
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -48,9 +47,7 @@ svg {
   padding: 0;
   border: 0;
   clip: rect(0 0 0 0);
-  overflow: hidden;
 }
-
 
 .wrapper {
   margin: 0 auto;
@@ -61,7 +58,6 @@ svg {
   background-color: #fff;
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
 }
-
 
 .navigation {
   padding: 0 70px;
@@ -75,12 +71,12 @@ svg {
   margin-right: 30px;
 }
 
-.header-logo {
-  position: absolute;
-}
-
 .main-header-logo {
   pointer-events: none;
+}
+
+.header-logo {
+  position: absolute;
 }
 
 .navigation-lists {
@@ -143,14 +139,12 @@ a:active span {
   color: rgba(0, 0, 0, 0.3);
 }
 
-
 .navigation-list:first-of-type .navigation-link {
   padding: 20px 16px;
 }
 
 .navigation-user .navigation-link:not(.navigation-link.button) {
   padding: 22px 12px;
-
 }
 
 .icon-favorites {
@@ -202,7 +196,6 @@ a:active span {
   color: rgba(255, 255, 255, 0.3);
 }
 
-
 .button-secondary {
   background-color: #82b3d3;
 }
@@ -220,7 +213,6 @@ a:active span {
 .button-tertiary:focus-visible {
   background-color: #6c9e42;
 }
-
 
 .button-quaternary {
   background-color: transparent;
@@ -241,7 +233,6 @@ a:active span {
 .button:not(.button-quaternary):disabled {
   background-color: #e5e5e5;
 }
-
 
 .navigation-item .button {
   font-size: 16px;
@@ -272,8 +263,12 @@ a:active span {
   margin: 0 auto;
 }
 
+.preview-title-text {
+  padding: 68px 274px;
+}
+
 .preview-title {
-  margin: 0 0 26px 0;
+  margin: 0 0 24px 0;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -287,11 +282,8 @@ a:active span {
   line-height: 26px;
 }
 
-/* Отступы слева и справа у заголовка и параграфа разные: у заголовка - 290, у параграфа 275.
-Если задавать 290 в коде ниже, то у слов в заголовке и параграфе произойдет перенос в ненужном месте,
-поэтому сделала отступ по параграфу и чуть меньше, чтоб переносов не было*/
-.preview-title-text {
-  padding: 70px 274px;
+.advantages {
+  margin-top: 22px;
 }
 
 .advantages-list {
@@ -304,8 +296,7 @@ a:active span {
 }
 
 .advantages-item {
-  min-width: 400px;
-  min-height: 386px;
+  max-height: 386px;
 }
 
 .advantages-item.dark {
@@ -375,6 +366,10 @@ a:active span {
   text-align: center;
 }
 
+.services-title-text {
+  padding: 64px 348px;
+}
+
 .services-title {
   font-weight: 700;
   font-size: 30px;
@@ -390,10 +385,6 @@ a:active span {
   line-height: 26px;
 }
 
-.services-title-text {
-  padding: 64px 348px;
-}
-
 .services-list {
   margin: 0;
   padding: 0;
@@ -404,8 +395,8 @@ a:active span {
 
 .services-item {
   flex-basis: 400px;
-  min-height: 385px;
-  padding: 82px 86px;
+  max-height: 386px;
+  padding: 80px 84px;
 }
 
 .services-item.light {
@@ -425,10 +416,9 @@ a:active span {
   color: #000;
 }
 
-
 .hotel-search {
   text-align: center;
-  padding: 96px 304px;
+  padding: 96px 70px;
 }
 
 .hotel-search-title {
@@ -513,7 +503,6 @@ a:active span {
   background-color: #d3d3d3;
 }
 
-
 .newsletter-button {
   font-size: 20px;
   line-height: 36px;
@@ -544,7 +533,7 @@ a:active span {
 
 .social-link {
   display: block;
-  padding: 0 10px;
+  padding: 0 12px;
   outline: none;
 }
 
@@ -563,10 +552,9 @@ a:active span {
   font-style: normal;
   font-size: 40px;
   line-height: 40px;
-  text-transform: uppercase;
-  text-align: center;
   display: block;
   outline: none;
+  padding: 5px 0;
 }
 
 .footer-phone:hover,
@@ -685,7 +673,6 @@ a:active span {
   opacity: 60%;
 }
 
-
 .form-group {
   display: flex;
   justify-content: space-between;
@@ -698,7 +685,6 @@ a:active span {
   line-height: 24px;
   color: #000;
 }
-
 
 .input-arrival,
 .input-departure {
@@ -726,20 +712,18 @@ a:active span {
 }
 
 .input-arrival:hover,
-.input-departure:hover,
-.input-arrival:focus-visible,
-.input-departure:focus-visible {
+.input-departure:hover {
   background-color: #e6e6e6;
 }
 
 .input-arrival:focus-visible,
 .input-departure:focus-visible {
+  background-color: #e6e6e6;
   outline: 3px solid #83b3d3;
 }
 
-
 .modal-message {
-  margin: 0 0 24px 20px;
+  margin: 0 0 22px 20px;
   padding: 0;
   font-size: 16px;
   line-height: 21px;
@@ -765,6 +749,15 @@ a:active span {
   display: flex;
   background-color: #f2f2f2;
   border-radius: 4px;
+}
+
+.count-controls:has(.count-input:hover) {
+  background-color: #e6e6e6;
+}
+
+.count-controls:has(.count-input:focus-visible) {
+  background-color: #e6e6e6;
+  outline: 3px solid #83b3d3;
 }
 
 .count-button {
@@ -843,8 +836,8 @@ a:active span {
   text-align: center;
   color: #000;
   font-family: inherit;
+  appearance: textfield;
 }
-
 
 .label-tooltip-wrapper {
   display: flex;
@@ -903,6 +896,7 @@ a:active span {
   font-size: 16px;
   line-height: 20px;
   left: -60%;
+  overflow: hidden;
 }
 
 .tooltip-text::before {
@@ -921,7 +915,6 @@ a:active span {
 .tooltip-toggle:active + .tooltip-text {
   display: block;
 }
-
 
 .modal-search-button {
   display: block;
@@ -965,7 +958,6 @@ a:active span {
   align-items: center;
 }
 
-
 .breadcrumbs-item:not(:first-child) {
   background-image: url("../images/breadcrumbs-arrow.svg");
   background-repeat: no-repeat;
@@ -976,6 +968,11 @@ a:active span {
   pointer-events: none;
 }
 
+.breadcrumbs-item .current-page {
+  font-size: 16px;
+  display: block;
+  margin-left: 20px;
+}
 
 .breadcrumbs-link svg:hover {
   fill: rgba(255, 255, 255, 0.6);
@@ -987,12 +984,6 @@ a:active span {
 
 .breadcrumbs-link svg:active {
   fill: rgba(255, 255, 255, 0.3);
-}
-
-.breadcrumbs-item .current-page {
-  font-size: 16px;
-  display: block;
-  margin-left: 20px;
 }
 
 .catalog-filter {
@@ -1007,14 +998,13 @@ a:active span {
 }
 
 .catalog-filter-group:first-of-type {
-  margin-right: 70px;
+  margin-right: 68px;
 }
 
 .catalog-filter-group:nth-child(3) {
   margin-left: auto;
-  margin-right: 70px;
+  margin-right: 68px;
 }
-
 
 .catalog-filter-title {
   font-weight: 700;
@@ -1031,7 +1021,7 @@ a:active span {
 }
 
 .catalog-filter-item:not(:last-child) {
-  margin-bottom: 16px;
+  margin-bottom: 18px;
 }
 
 .control {
@@ -1075,7 +1065,8 @@ a:active span {
   opacity: 60%;
 }
 
-.control:focus-visible {
+.control-checkbox:focus-visible + .control-mark,
+.control-radio:focus-visible + .control-mark {
   outline: 3px solid #83b3d3;
 }
 
@@ -1100,7 +1091,7 @@ a:active span {
   padding: 12px 20px;
   border: none;
   outline: none;
-  margin-bottom: 36px;
+  margin-bottom: 44px;
   cursor: pointer;
 }
 
@@ -1125,7 +1116,6 @@ a:active span {
 .price:last-of-type {
   border-radius: 0 4px 4px 0;
 }
-
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -1177,10 +1167,6 @@ input::-webkit-inner-spin-button {
   outline: none;
 }
 
-.toggle-max {
-  right: 0;
-}
-
 .range-toggle:hover,
 .range-toggle:focus-visible {
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
@@ -1195,6 +1181,9 @@ input::-webkit-inner-spin-button {
   box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.4);
 }
 
+.toggle-max {
+  right: 0;
+}
 
 .flex-buttons {
   display: flex;
@@ -1215,7 +1204,7 @@ input::-webkit-inner-spin-button {
 
 .button-submit {
   border: none;
-  margin: 56px 0 40px 0;
+  margin: 56px 0 32px 0;
   padding: 8px 50px;
   display: flex;
   cursor: pointer;
@@ -1233,7 +1222,7 @@ input::-webkit-inner-spin-button {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 50px 70px 60px;
+  padding: 48px 70px 60px;
 }
 
 .hotel-quantity {
@@ -1256,7 +1245,7 @@ input::-webkit-inner-spin-button {
   position: absolute;
   min-width: 10px;
   min-height: 10px;
-  right: 98px;
+  right: 92px;
   top: 45%;
   border-right: 2px solid #000;
   border-bottom: 2px solid #000;
@@ -1336,12 +1325,6 @@ input::-webkit-inner-spin-button {
   border: 2px solid #68a2ca;
 }
 
-.select-cards-view {
-  display: flex;
-  flex-grow: 1;
-  justify-content: space-between;
-}
-
 .hotels-list {
   margin: 40px 0 0 0;
   padding: 0;
@@ -1359,7 +1342,6 @@ input::-webkit-inner-spin-button {
   border: 1px solid #e6e6e6;
   border-radius: 4px;
   padding: 20px;
-
 }
 
 .hotels-card-link {
@@ -1371,14 +1353,15 @@ input::-webkit-inner-spin-button {
   grid-column: 1/-1;
 }
 
-.hotels-card-title {
-  margin: 0;
-}
-
 .hotels-card-image {
-  margin-bottom: 16px;
+  margin-bottom: 14px;
   object-fit: cover;
   width: 100%;
+}
+
+.hotels-card-title {
+  margin: 0;
+  letter-spacing: -2px;
 }
 
 .hotel-price {
@@ -1386,28 +1369,27 @@ input::-webkit-inner-spin-button {
 }
 
 .hotel-price b,
-.rating b {
+.hotel-rating b {
   font-weight: 400;
 }
 
 .button.details,
 .button.add-to-favorites,
 .button.favorites,
-.button.rating {
+.button.hotel-rating {
   min-width: 140px;
   padding: 8px 5px;
   font-size: 16px;
   line-height: 20px;
 }
 
-
-.stars {
+.hotel-stars {
   display: flex;
   gap: 6px;
   padding-top: 10px;
 }
 
-.button.rating {
+.button.hotel-rating {
   font-weight: 400;
   background-color: #f2f2f2;
   color: #333;
@@ -1421,11 +1403,11 @@ input::-webkit-inner-spin-button {
   min-height: 1px;
   background-color: #e6e6e6;
   transform: rotate(-180deg);
-  margin: 20px 0 40px 0;
-
+  margin: 20px 0 32px 0;
 }
 
 .pagination {
+  margin-bottom: 1px; /*для Pixel Perfect*/
   padding: 0;
   list-style: none;
   display: flex;
@@ -1446,7 +1428,7 @@ input::-webkit-inner-spin-button {
   pointer-events: none;
 }
 
-.forward {
+.item-forward {
   display: block;
   font-size: 22px;
   line-height: 60px;
@@ -1480,7 +1462,6 @@ input::-webkit-inner-spin-button {
 .newsletter-field-dark:focus-visible {
   background-color: #e6e6e6;
   opacity: 60%;
-
 }
 
 .newsletter-field-dark:focus-visible {
