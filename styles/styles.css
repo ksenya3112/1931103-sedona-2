@@ -144,6 +144,10 @@ a:active span {
   padding: 20px 16px;
 }
 
+.navigation-user {
+  justify-content: flex-end;
+}
+
 .navigation-user .navigation-link:not(.navigation-link.button) {
   padding: 22px 12px;
 }
@@ -972,6 +976,12 @@ a:active span {
   cursor: pointer;
 }
 
+.modal-search-button:disabled {
+  background-color: #e5e5e5;
+  opacity: 0.8;
+  pointer-events: none;
+}
+
 .sedona-hotels {
   background-image: url("../images/filters-background.jpg");
   background-color: #8ab8d2;
@@ -1032,6 +1042,7 @@ a:active span {
 .catalog-filter {
   display: flex;
   flex-wrap: wrap;
+  row-gap: 24px;
 }
 
 .catalog-filter-group {
