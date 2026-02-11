@@ -801,6 +801,7 @@ a:active span {
 .count-controls:has(.count-input:disabled) {
    background-color: #f2f2f2;
    pointer-events: none;
+   opacity: 0.8;
 }
 
 .count-button {
