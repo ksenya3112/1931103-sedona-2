@@ -969,8 +969,8 @@ a:active span {
   border: 10px solid transparent;
   border-bottom-color: #333333;
   bottom: 100%;
-  left: 48%;
-  transform: translateX(-48%);
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .tooltip-toggle:hover + .tooltip-text,
